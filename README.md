@@ -2,7 +2,7 @@
 
 > Adicionando chave SSH para transferir conteúdo do projeto dentro de um repositórios local para o repositório remoto no Github.
 
-## Gerando a chave 
+## 🗝 Gerando a chave 
 
 Primeiramente, devemos gerar um novo par de chaves usando o comando ssh-keygen:
 ```
@@ -28,7 +28,7 @@ The key fingerprint is:
 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db seu-email@seu-servidor.com
 ```
 
-## Adicionando a chave no Github
+## 🔐 Adicionando a chave no Github
 Feito isso, vamos colocar as chaves no GitHub. 
 
 Acesse o caminho que foi gerada a cahve e encontrará dois arquivos. O de formato .pub no final é o que contem a chave ppublica.
@@ -42,7 +42,7 @@ Lá você terá um campo de título (opcional) e o campo da chave, no qual você
 Clique em Add SSH key e confirme a operação adicionando a senha do Github. Depois da sua chave ter sido configurada no GitHub, já é possível dar um git push normalmente.
 
 
-## Remover origin
+## 🧨 Desvincular repositório remoto
 
 Caso o repositório local ja esteja vinculado a algum repositorio remoto, será preciso desvincular de modo a permitir a continuidade dos passos abaixo. Em caso neativo, pode-se pular desta etapa para a proxima.
 ```
@@ -50,7 +50,7 @@ git remote rm origin //Remover o repositório remoto vinculado.
 git remote //consulta se foi mesmo removido
 ```
 
-## Associar repositório remoto
+## ✨ Associar repositório remoto
 ```
 git init
 git remote add origin git@github.com:"usuario/repositorio-aqui".git
@@ -58,12 +58,12 @@ git remote add origin git@github.com:"usuario/repositorio-aqui".git
 
 Agora deve-se atentar se o repositório remoto ja contem algum arquivo (como o README, por exemplo), pois isto irá definir qual dos dois passos seguinte será utilizado.
 
-## Sem arquivos/README:
+## 📭 Sem arquivos/README:
 ```
 git push -u origin master
 ```
 
-## Com arquivos/READEME:
+## 📬 Com arquivos/READEME:
 ```
 git add .
 git commit -m"comentário"
