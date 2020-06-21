@@ -42,8 +42,6 @@ Haverá um campo de título (opcional) e o campo da chave, onde deverá ser cola
 
 Clique em `Add SSH key` e confirme a operação inserindo a senha do Github.
 
-Depois da sua chave ter sido configurada no GitHub, já é possível dar um git push normalmente.
-
 ## 🧨 Desvincular repositório remoto
 
 Caso o repositório local ja esteja vinculado a algum repositorio remoto, será preciso desvincular de modo a permitir a continuidade dos passos abaixo. Em caso negativo, pode-se pular desta etapa para a proxima.
