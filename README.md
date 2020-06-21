@@ -32,19 +32,15 @@ The key fingerprint is:
 
 ## 🔐 Adicionando a chave no Github
 
-Feito isso, vamos colocar as chaves no GitHub. 
+Acesse o caminho que foi gerada a cahve e encontrará dois arquivos. O de extensão `.pub` é o que contém a chave pública que iremos utilizar. 
 
-Acesse o caminho que foi gerada a cahve e encontrará dois arquivos.
+No interior do arquivo, seleciona e copie a chave que começa com `ssh-rsa` seguida de uma cadeira de caracteres.
 
-O de extensão .pub é o que contem a chave ppublica. Abra-o. 
+No Github, acess `Configurações`, no menu lateral esquerdo clique em `SSH and GPS keys` e clique no botão `Add SSH key`. 
 
-Em seu interior a chave começa com `ssh-rsa` seguida de uma cadeira de caracteres. Copie todo o conteudo do arquivo.
+Haverá um campo de título (opcional) e o campo da chave, onde deverá ser colada a chave pública que foi gerada.
 
-Logue em sua conta do Github, vá para as configurações de Chaves SSH e clique no botão `Add SSH key`. 
-
-Lá você terá um campo de título (opcional) e o campo da chave, onde deverá ser colar a chave pública que foi gerada.
-
-Clique em `Add SSH key` e confirme a operação adicionando a senha do Github.
+Clique em `Add SSH key` e confirme a operação inserindo a senha do Github.
 
 Depois da sua chave ter sido configurada no GitHub, já é possível dar um git push normalmente.
 
